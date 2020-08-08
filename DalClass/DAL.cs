@@ -15,7 +15,7 @@ namespace DAL.Services
         SqlCommand cmd = new SqlCommand();       
 
         //READ    regresa lista de sp
-        public T GetReaderFromSpModel<T>(string spName, params SqlParameter[] parameters)
+        public T GetReaderFromSpModel<T>(string spName, params SqlParameter[] parameters) 
         {
             SqlConnection sqlConn = new SqlConnection(connString); 
             T modelo = default(T);
