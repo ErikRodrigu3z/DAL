@@ -17,7 +17,7 @@ namespace DAL.Services
         //READ    regresa lista de sp
         public T GetReaderFromSpModel<T>(string spName, params SqlParameter[] parameters)
         {
-            SqlConnection sqlConn = new SqlConnection(connString);
+            SqlConnection sqlConn = new SqlConnection(connString); 
             T modelo = default(T);
 
             if (sqlConn.State == System.Data.ConnectionState.Closed)
